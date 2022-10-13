@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @CelineCiron
 - 👀 I’m interested in maps, remote sensing, webmapping and data science 
 - 🌱 I’m currently learning geomatics
-- 💞️ I’m looking to collaborate on project to improve my skills 
+- 💞️ I’m looking to collaborate on projects to improve my skills 
 - 📫 How to reach me ...
 
 <!---
