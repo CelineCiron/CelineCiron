@@ -1,0 +1,37 @@
+---
+title: "stats"
+author: "Ciron Daus Debrock"
+date: "2023-01-06"
+output: html_document
+---
+
+Chargement du jeu de donnée - penser à changer le chemin d'accès du setwd
+
+```{r}
+setwd("C:/Users/celin/OneDrive/Master2/905 Statistiques/2_GLM")
+dataIni <- read.csv("dataT3_simplif.csv")
+```
+
+### Question 1
+
+Faire le diagnostic des hypothèses du modèle du diamètre des chênes en fonction du relevé, de l'altitude et de l'altitude au carré présenté en dernière section du support de cours.
+
+```{r}
+
+```
+
+### Question 2
+
+En suivant les exemples du cours, analyser à l'aide de modèles linéaires gaussiens l'effet du relevé et de l'altitude sur le diamètre des charmes ("Carpinus betulus L., 1753" dans le champ "recherche_esp_lb_nom_plantae" du jeu de données "dataIni").
+
+### Question 3 
+
+Comme vu dans l'introduction du cours, le plan d'échantillonnage des relevés est hiérarchique : trois grands triangles contenant chacun trois moyens triangles contenant chacun trois relevés. Dans le cours on a fait un modèle ANOVA pour expliquer le diamètre des chênes en utilisant le relevé comme base de définition des sous-populations. Peut-on utiliser des groupes plus grossiers ? par exemple des groupes (et donc des sous populations) définis sur les triangles de taille intermédiaire (soit des lots de trois relevés) ? ou même sur les trois grands triangles (soit des groupes de 9 relevés) ? Faire un modèle ANOVA pour chaque niveau d'agrégation, et utiliser des tests de modèle emboîtés pour répondre à la question.
+
+### Question 4 
+
+Les arbres porteurs d'une cavité basse sont indiqué dans le jeu de données "dataIni" par la valeur "oui" dans le champ "cav_basses_presence_cavites". Constituer un sousjeu de données sur les chênes porteurs de cavité basse , et construire, évaluer et, le cas échéant, interpréter un modèle de régression linéaire de la circonférence de la cavité ("cara_cavites_circonference" en cm) en fonction du diamètre de l'arbre ("DBH" en cm) comme variable explicative. Est-ce intéressant d'ajouter le statut de l'arbre (champ "Status") en plus comme variable explicative ?
+
+### Question 5 
+
+Proposer, évaluer et,; le cas échéant, interpréter un modèle linéaire gaussien de l'altitude des arbres en fonction de leur longitude dans le jeu de donnée "dataIni". Quel sens donner à ce modèle ?
